@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Oswald:wght@400;500;700;600&display=swap');
+
+/* 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+*/
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* COMMON CSS END */
+/* Top header CSS Start */
+.top-header {
+    background-color: #0872b9;
+
+}
+
+.top-header-main {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+
+}
+
+.top-header-text h5 {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.top-header-icon ul {
+    display: flex;
+}
+
+.top-header-icon li a {
+    color: #FFFFFF;
+    padding: 0px 20px;
+}
+
+.top-header-icon li a:hover {
+    color: #2f3d46;
+}
+
+/* Top header CSS end */
+/* Header CSS START */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li a {
+    padding: 15px 15px;
+    color: #353535;
+}
+
+.menu ul li a:hover {
+    color: #0872b9;
+}
+
+/* Header CSS end */
+/* Banner CSS start */
+.banner-area {
+    height: 400px;
+    background-image: url('/images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-area::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+
+}
+
+.banner-text {
+    width: 445px;
+    margin-left: auto;
+    text-align: right;
+    padding: 100px 0px;
+    z-index: 2;
+
+}
+
+.banner-text h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Oswald";
+
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner-text p {
+    color: #FFFFFF;
+}
+.ban-btn{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.ban-btn-left,
+.ban-btn-right{
+   padding: 10px 16px;
+   border: 1px solid #FFF;
+   text-align: center;
+   color: #FFF;
+   font-family: 'Oswald', sans-serif;
+   transition:all .4s ;
+   -webkit-transition:all .4s ;
+   -moz-transition:all .4s ;
+   -ms-transition:all .4s ;
+   -o-transition:all .4s ;
+}
+.ban-btn-left:hover{
+    background-color: #0872b9;
+    border: 1px solid transparent;
+}
+.ban-btn-right:hover{
+    background-color: #0872b9;
+    border: 1px solid transparent;
+}
+.ban-btn-left{
+    margin-right: 16px;
+}
+
+/* banner CSS end */
+/* About CSS start */
+
+.about-title h3{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #353535;
+    text-align: center;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    height: 260px;
+    align-items: center;
+}
+.about-img{
+    width: 40%;
+}
+.about-text{
+    width: 60%;
+    padding-left: 16px;
+}
+.about-text > p{
+    padding-bottom: 20px;
+}
+/* About CSS end */
+/* Servicess CSS Start */
+.services-card-main {
+    display: flex;
+    justify-content: space-between;
+}
+.services-card{
+    width: 300px;
+}
